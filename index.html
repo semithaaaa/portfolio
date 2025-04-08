@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nethum Perera - Data Scientist & Analytics Professional</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particle-canvas" class="particle-background"></canvas>
+
+  <!-- Welcome Popup -->
+  <div id="welcome-popup" class="welcome-popup hidden">
+    <div class="popup-content">
+      <div class="popup-header">
+        <h2>Welcome to my Portfolio</h2>
+        <button id="close-popup" class="close-button">✕</button>
+      </div>
+      <p>Explore my journey in data science, machine learning, and analytics through this interactive portfolio.</p>
+      <div class="popup-footer">
+        <button id="explore-button" class="button primary-button">Let's Explore</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Nethum Perera</div>
+      <nav class="desktop-nav">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="button outline-button download-cv-button">
+          Download CV
+          <i class="fas fa-file-alt"></i>
+        </button>
+        <button class="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav hidden">
+    <div class="mobile-nav-content">
+      <button class="mobile-close-button">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#publications" class="mobile-nav-link">Publications</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+      <button class="button outline-button mobile-cv-button">
+        Download CV
+      </button>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="about" class="section hero-section">
+      <div class="hero-content">
+        <div class="profile-image-container">
+          <div class="profile-image-wrapper">
+            <img src="images/profile.png" alt="Nethum Perera" class="profile-image">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">Nethum Perera</h1>
+          <h2 class="hero-subtitle">Data Scientist & Analytics Professional</h2>
+          <p class="hero-description">
+            A self-motivated and determined individual passionate about data science, machine learning, and analytics.
+            Currently pursuing BSc (Hons) in Data Science.
+          </p>
+          <div class="hero-buttons">
+            <a href="mailto:nethumsemithaperera@gmail.com?subject=Portfolio%20Contact" class="button primary-button">
+              Contact Me
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <button class="button outline-button">
+              View Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="card experience-card">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Intern - Data Science & Automation</h3>
+            <p class="card-subtitle">AI & Business Intelligence Division, Sri Lanka Telecom PLC</p>
+          </div>
+          <span class="badge">October 2024 - April 2025</span>
+        </div>
+        <div class="card-content">
+          <p>Worked on data science and automation projects in the AI & Business Intelligence Division.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-content">
+              <h3 class="card-title">BSc (Hons) Data Science</h3>
+              <span class="badge">Current</span>
+            </div>
+            <p class="card-subtitle">Coventry University, UK affiliated with NIBM Sri Lanka</p>
+          </div>
+          <div class="card-content">
+            <p>Undergraduate - Final Year</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">BA Music (Visharad)</h3>
+            <p class="card-subtitle">Bhatkhande Sanskriti Vishwavidyalaya</p>
+          </div>
+          <div class="card-content">
+            <p>2020</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">German Language</h3>
+            <p class="card-subtitle">Goethe-Institut Sri Lanka</p>
+          </div>
+          <div class="card-content">
+            <p>Present</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">School</h3>
+            <p class="card-subtitle">Royal College, Colombo 07 Sri Lanka</p>
+          </div>
+          <div class="card-content">
+            <p>Physical Science Stream (2007 - 2020)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Qualifications -->
+    <section id="certifications" class="section">
+      <h2 class="section-title">Professional Qualifications</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Higher National Diploma in Data Science</h3>
+            <p class="card-subtitle">National Institute of Business Management, Sri Lanka</p>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <div class="meta-item">
+                <i class="fas fa-calendar"></i>
+                <span>2024</span>
+              </div>
+              <p class="gpa">GPA: 3.90 / 4.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Advanced Diploma in Data Science</h3>
+            <p class="card-subtitle">National Institute of Business Management, Sri Lanka</p>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <div class="meta-item">
+                <i class="fas fa-calendar"></i>
+                <span>2023</span>
+              </div>
+              <p class="gpa">GPA: 3.85 / 4.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">CIMA Professional Qualification</h3>
+            <p class="card-subtitle">Charted Institute of Management Accountant - UK</p>
+          </div>
+          <div class="card-content">
+            <div class="meta-item">
+              <i class="fas fa-calendar"></i>
+              <span>2024 - Present</span>
+            </div>
+            <p class="mt-10">Completed Certificate Level</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Certificate in Network Engineering</h3>
+            <p class="card-subtitle">National Institute of Business Management, Sri Lanka</p>
+          </div>
+          <div class="card-content">
+            <div class="meta-item">
+              <i class="fas fa-calendar"></i>
+              <span>2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Cyber security IT and Network Essentials</h3>
+            <p class="card-subtitle">Cisco Networking Academy</p>
+          </div>
+          <div class="card-content">
+            <div class="meta-item">
+              <i class="fas fa-calendar"></i>
+              <span>2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      
+      <div class="tabs">
+        <div class="tab-list">
+          <button class="tab-button active" data-tab="technical">Technical Skills</button>
+          <button class="tab-button" data-tab="soft">Soft Skills</button>
+        </div>
+        
+        <div class="tab-content active" id="technical-tab">
+          <div class="skills-grid">
+            <div class="skill-item" data-tooltip="Advanced Python Programming">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <span class="skill-name">Python</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Statistical Analysis with R">
+              <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <span class="skill-name">R</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Database Management & Queries">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span class="skill-name">SQL</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Deep Learning & Neural Networks">
+              <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <span class="skill-name">TensorFlow</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Deep Learning Framework">
+              <div class="skill-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <span class="skill-name">PyTorch</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Business Intelligence & Dashboards">
+              <div class="skill-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <span class="skill-name">Power BI</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Data Visualization & Analytics">
+              <div class="skill-icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <span class="skill-name">Tableau</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Neural Network API">
+              <div class="skill-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <span class="skill-name">Keras</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Enterprise Database Management">
+              <div class="skill-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <span class="skill-name">Oracle SQL</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Object-Oriented Programming">
+              <div class="skill-icon">
+                <i class="fab fa-java"></i>
+              </div>
+              <span class="skill-name">Java</span>
+            </div>
+            
+            <div class="skill-item" data-tooltip="Machine Learning Algorithms">
+              <div class="skill-icon">
+                <i class="fas fa-cubes"></i>
+              </div>
+              <span class="skill-name">Scikit-Learn</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="soft-tab">
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-brain"></i>
+                  Team Collaboration
+                </h3>
+              </div>
+              <div class="card-content">
+                <p>Experienced in collaborating effectively within teams to achieve common goals.</p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-code"></i>
+                  Problem Solving
+                </h3>
+              </div>
+              <div class="card-content">
+                <p>Analytical approach to solving complex problems with data-driven solutions.</p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-database"></i>
+                  Professional Ethics
+                </h3>
+              </div>
+              <div class="card-content">
+                <p>Adhere to a sense of moral obligations and ethics of integrity, objectivity, due care and professional competence.</p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-chart-bar"></i>
+                  Adaptability
+                </h3>
+              </div>
+              <div class="card-content">
+                <p>Self-motivated and determined to grasp new practical experiences while enhancing skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+      <h2 class="section-title">Publications</h2>
+      <div class="publications-list">
+        <div class="card publication-card">
+          <div class="card-header">
+            <h3 class="card-title">Machine Learning Approach To Model Rainfall & River Overflow in Nilwala River Basin, Sri Lanka</h3>
+            <p class="card-subtitle">ICARC 2025 - IEEE Xplore Publication</p>
+          </div>
+          <div class="card-content">
+            <p>Research publication on using machine learning techniques to model rainfall patterns and predict river overflow in the Nilwala River Basin in Sri Lanka.</p>
+            <button class="button outline-button mt-20">
+              View Publication
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card publication-card">
+          <div class="card-header">
+            <h3 class="card-title">Optimizing Demand Forecasting and Supply Chain Resilience Using Machine Learning and Time Series Analysis</h3>
+            <p class="card-subtitle">ICME 2024 - University of Ruhuna</p>
+          </div>
+          <div class="card-content">
+            <p>Research on applying machine learning and time series analysis techniques to optimize demand forecasting and improve supply chain resilience.</p>
+            <button class="button outline-button mt-20">
+              View Publication
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="contact-subtitle">Get In Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <p class="contact-label">Email</p>
+                <p class="contact-value">nethumsemithaperera@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+94 75 940 2025</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-text">
+                <p class="contact-label">LinkedIn</p>
+                <a href="https://lk.linkedin.com/in/nethum-perera-6333691b6" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  linkedin.com/in/nethum-perera-6333691b6
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Send Me a Message</h3>
+              <p class="card-subtitle">Fill out the form below to get in touch with me.</p>
+            </div>
+            <div class="card-content">
+              <form id="contact-form" class="contact-form">
+                <div id="form-status" class="form-status hidden"></div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" required class="form-input" placeholder="Your name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" required class="form-input" placeholder="Your email">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" required class="form-input" placeholder="Subject">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" rows="4" required class="form-textarea" placeholder="Your message"></textarea>
+                </div>
+                
+                <button type="submit" class="button primary-button full-width">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section">
+      <h2 class="section-title">References</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Mr. Badrajith Siriwardana</h3>
+            <p class="card-subtitle">Chief Executive Officer, Kings Hospital</p>
+          </div>
+          <div class="card-content">
+            <div class="meta-item">
+              <i class="fas fa-phone"></i>
+              <span>+94 71 483 7167</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Eng. Mr. Gration Fernando</h3>
+            <p class="card-subtitle">Chairman/Director, BPP Engineering</p>
+          </div>
+          <div class="card-content">
+            <div class="meta-item">
+              <i class="fas fa-phone"></i>
+              <span>+94 77 361 6805</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© <span id="current-year"></span> Nethum Perera. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://lk.linkedin.com/in/nethum-perera-6333691b6" target="_blank" rel="noopener noreferrer" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+        <a href="mailto:nethumsemithaperera@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span class="sr-only">Email</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
